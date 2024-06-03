@@ -58,7 +58,9 @@ function addStar() {
 Array(200).fill().forEach(addStar)
 
 
-const spaceTexture = new THREE.TextureLoader().load('Alastair Child F Icon 8.png');
+//const spaceTexture = new THREE.TextureLoader().load('Alastair Child F Icon 8.png');
+import textureImg from '/Alastair Child F Icon 8.png';
+const spaceTexture = new THREE.TextureLoader().load(textureImg); //WORKES
 scene.background = spaceTexture;
 
 
@@ -71,7 +73,9 @@ scene.background = spaceTexture;
 
 //Avatar
 
-const cubeTexture = new THREE.TextureLoader().load('Alastair Child F Icon 8.png');
+//const cubeTexture = new THREE.TextureLoader().load('Alastair Child F Icon 8.png');
+import textureImg1 from '/Alastair Child F Icon 8.png';
+const cubeTexture = new THREE.TextureLoader().load(textureImg1);
 
 const cube = new THREE.Mesh(
     new THREE.BoxGeometry(3, 3, 3),
@@ -83,8 +87,12 @@ scene.add(cube);
 // Moon
 
 
-const moonTexture = new THREE.TextureLoader().load('Alastair Child F Icon 8.png');
+//const moonTexture = new THREE.TextureLoader().load('Alastair Child F Icon 8.png');
+import textureImg2 from '/Alastair Child F Icon 8.png';
+const moonTexture = new THREE.TextureLoader().load(textureImg2);
 const normalTexture = new THREE.TextureLoader().load('normal.jpg');
+//import textureImg from '/normal.jpg';
+//const normalTexture = new THREE.TextureLoader().load(textureImg);
 
 const moon = new THREE.Mesh(
     new THREE.SphereGeometry(3, 32, 32),
