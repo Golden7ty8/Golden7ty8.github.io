@@ -64,3 +64,14 @@ blockquote p {
 .left {
     grid-column: 6 / 12;
 }
+
+.category-buttons {
+    all: unset;
+    background-color: #CBC3E3;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.category-buttons:focus {
+    outline: 1px solid purple;
+}

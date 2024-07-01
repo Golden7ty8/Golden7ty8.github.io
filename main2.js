@@ -82,7 +82,7 @@ scene.background = spaceTexture;
 const cubeTexture = new THREE.TextureLoader().load(textureImg1);
 
 const cube = new THREE.Mesh(
-    new THREE.BoxGeometry(3, 3, 3),
+    new THREE.BoxGeometry(10, 10, 10),
     new THREE.MeshBasicMaterial({map: cubeTexture})
 );
 
