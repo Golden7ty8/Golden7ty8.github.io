@@ -2,7 +2,15 @@ import { defineConfig } from "vite";
 //import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-    base: '/',
-    login: 'testpage.html',
+    build: {
+        rollupOptions: {
+            input: {
+                home: 'index.html',
+                test: 'testpage.html'
+            }
+        }
+    }
+    
+    //base: '/',
     //plugins: [vue()]
 })
